@@ -1,0 +1,31 @@
+/* Small personal changes to the assigned LearnCS8 Bootstrap template. */
+:root { --accent: #21546b; }
+body { color: #50565d; }
+.bg-primary { background: var(--accent) !important; }
+.text-primary { color: var(--accent) !important; }
+h1 { font-size: clamp(4rem, 8vw, 6rem); line-height: 1; }
+h2 { font-size: 3.2rem; }
+.lead { font-size: 1.05rem; line-height: 1.85; max-width: 78ch; }
+.subheading { line-height: 1.4; }
+.social-icons a:hover, .social-icons a:focus { background: var(--accent); }
+.resource-note { font-size: .8rem; margin-top: 1rem; max-width: 65ch; }
+#sideNav .navbar-nav .nav-item .nav-link { color: #dbe8ed; }
+#sideNav .navbar-nav .nav-item .nav-link.active { color: white; }
+.img-profile { object-fit: cover; }
+.mobile-portrait { border-radius: 50%; object-fit: cover; margin: 0 0 1.5rem; }
+.resume-content { max-width: 65ch; }
+.resume-date { padding-top: .4rem; }
+.portfolio-images { font-size: 0; }
+.portfolio-images img { width: calc(50% - 12px); height: auto; aspect-ratio: 500 / 281; object-fit: cover; margin: 0 12px 16px 0; border: 1px solid #d5dce0; }
+footer { padding: 2rem; text-align: center; font-size: .875rem; }
+.skip-link { position: fixed; top: -60px; left: 12px; background: white; padding: 12px; z-index: 2000; }
+.skip-link:focus { top: 8px; }
+a:focus-visible, button:focus-visible { outline: 3px solid #d99b23; outline-offset: 4px; }
+@media (max-width: 767px) {
+  .portfolio-images img { width: 100%; margin-right: 0; }
+  section.resume-section { min-height: auto; padding-top: 3rem !important; padding-bottom: 3rem !important; }
+  h2 { font-size: 2.6rem; }
+}
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { scroll-behavior: auto !important; transition: none !important; }
+}
